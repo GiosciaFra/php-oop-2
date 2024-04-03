@@ -10,4 +10,9 @@ class Category
         $this->type = $_type;
         $this->icon = $_icon;
     }
+
+    public function __toString()
+    {
+        return $this->icon;
+    }
 }
