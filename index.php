@@ -17,6 +17,8 @@ require './db.php'
 
 <body class=" bg-warning ">
 
+
+
     <h1 class=" text-center text-white text-uppercase border border-4 border-warning-subtle m-5 py-2 "><strong>Pet Shop</strong></h1>
 
     <div class="container">
@@ -24,6 +26,7 @@ require './db.php'
             <?php foreach ($ArrayProduct as $product) : ?>
                 <div class='col-md-4'>
                     <div class='card bg-warning-subtle m-3  '>
+
 
                         <img src='<?= $product->productImg ?>' class='card-img-top object-fit-cover' alt='<?= $product->name ?>'>
                         <div class='card-body text-black'>
@@ -33,7 +36,7 @@ require './db.php'
                             <p class='card-text text-danger '><strong><?= $product->price ?></strong> </p>
 
                             <?php if ($product instanceof Food) : ?>
-                                <p class='card-text'><strong>Età:</strong> <?= $product->age ?></p>
+                                <p class='card-text'><strong>Età:</strong> <?= $product->age ?> Mesi</p>
                                 <p class='card-text'><strong>Ingredienti:</strong> <?= $product->ingredients ?></p>
                                 <p class='card-text'><strong>Peso:</strong> <?= $product->weight ?></p>
                             <?php elseif ($product instanceof Accessories) : ?>
@@ -42,7 +45,7 @@ require './db.php'
 
                             <?php elseif ($product instanceof PetsGame) : ?>
                                 <p class='card-text'><strong>Materiali:</strong> <?= $product->materials ?></p>
-                                <p class='card-text'><strong>Età:</strong> <?= $product->age ?></p>
+                                <p class='card-text'><strong>Età:</strong> <?= $product->age ?> Mesi</p>
 
                             <?php elseif ($product instanceof Hygiene) : ?>
                                 <p class='card-text'><strong>Tipo di pelo:</strong> <?= $product->typeOfHair ?></p>

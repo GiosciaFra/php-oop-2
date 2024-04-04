@@ -22,8 +22,8 @@ $CatHygiene = new Hygiene('Salviette Disinfettanti', '8.00€', $cat, 'https://p
 $DogHygiene = new Hygiene('Antiparassitario', '28.50€', $dog, 'https://picsum.photos/200/200', 'Pelo Lungo');
 
 
-$CatFood = new Food('Crocchette', '7.99€', $cat, 'https://picsum.photos/200/200', '3-9 mesi', 'Salmone', '750 gr');
-$DogFood = new Food('Carne Secca', '9.99€', $dog, 'https://picsum.photos/200/200', '9-14 mesi', 'Manzo', '450 gr');
+$CatFood = new Food('Crocchette', '7.99€', $cat, 'https://picsum.photos/200/200', 3, 'Salmone', '750 gr');
+$DogFood = new Food('Carne Secca', '9.99€', $dog, 'https://picsum.photos/200/200', 'ciao', 'Manzo', '450 gr');
 
 
 
