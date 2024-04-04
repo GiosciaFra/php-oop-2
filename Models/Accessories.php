@@ -1,9 +1,9 @@
 <?php
 
-
+require_once  './Models/Traits/HasMatAge.php';
 class Accessories extends Product
 {
-    public $materials;
+    use HasMaterials;
     public $size;
 
     function __construct($_name, $_price, $_category, $_productImg, $_materials, $_size)

@@ -1,9 +1,11 @@
 <?php
 
+require_once  './Models/Traits/HasMatAge.php';
+
 class PetsGame extends Product
 {
-    public $materials;
-    public $age;
+    use HasMaterials;
+    use HasAge;
 
     function __construct($_name, $_price, $_category, $_productImg, $_materials, $_age)
     {

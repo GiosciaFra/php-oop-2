@@ -42,7 +42,7 @@ require './db.php'
 
                             <?php elseif ($product instanceof PetsGame) : ?>
                                 <p class='card-text'><strong>Materiali:</strong> <?= $product->materials ?></p>
-                                <p class='card-text'><strong>Taglia/Peso:</strong> <?= $product->age ?></p>
+                                <p class='card-text'><strong>Età:</strong> <?= $product->age ?></p>
 
                             <?php elseif ($product instanceof Hygiene) : ?>
                                 <p class='card-text'><strong>Tipo di pelo:</strong> <?= $product->typeOfHair ?></p>

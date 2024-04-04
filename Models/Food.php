@@ -1,8 +1,9 @@
 <?php
+require_once  './Models/Traits/HasMatAge.php';
 
 class Food extends Product
 {
-    public $age;
+    use HasAge;
     public $ingredients;
     public $weight;
 
